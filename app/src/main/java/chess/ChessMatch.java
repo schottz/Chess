@@ -25,6 +25,7 @@ public class ChessMatch {
         return mat;
     }
 
+<<<<<<< HEAD
     public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition){
         Position source = sourcePosition.toPosition();
         Position target = targetPosition.toPosition();
@@ -60,5 +61,15 @@ public class ChessMatch {
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new King(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
+=======
+    private void placeNewPiece(char column, int row, ChessPiece piece){
+        board.placePiece(piece, new ChessPosition(column, row).toPosition());
+>>>>>>> 9ffaaa1266e4160955e96309a050271564b7753d
     }
+
+    private void initialSetup(){
+        placeNewPiece('b', 6, new Rook(board, Color.WHITE));
+        placeNewPiece('e', 8, new King(board, Color.BLACK));
+        placeNewPiece('e', 1, new King(board, Color.WHITE));
+            }
 }

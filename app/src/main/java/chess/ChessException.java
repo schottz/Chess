@@ -1,5 +1,6 @@
 package chess;
 
+<<<<<<< HEAD
 import boardgame.BoardException;
 
 public class ChessException extends BoardException {
@@ -9,3 +10,11 @@ public class ChessException extends BoardException {
         super(msg);
     }
 }
+=======
+public class ChessException extends RuntimeException{
+
+    public ChessException(String msg){
+        super(msg);
+    }
+}
+>>>>>>> 9ffaaa1266e4160955e96309a050271564b7753d
